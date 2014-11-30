@@ -1,0 +1,13 @@
+<article id="upcoming-events" class="panel panel-default">
+
+  <div class="panel-heading">
+    <h3>Upcoming events</h3>
+  </div>
+  <div class="panel-body">
+    <ul ng-show="upcomingEventsCtrl.events.length" ng-repeat="event in upcomingEventsCtrl.events">
+      <li>{{event.name}}</li>
+    </ul>
+
+    <p ng-hide="upcomingEventsCtrl.events.length">No events found</p>
+  </div>
+</article>

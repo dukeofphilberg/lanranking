@@ -1,0 +1,12 @@
+<article id="recent-events" class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Recent events</h3>
+  </div>
+  <div class="panel-body">
+    <ul ng-show="recentEventsCtrl.events.length" ng-repeat="event in recentEventsCtrl.events">
+      <li>{{event.name}}</li>
+    </ul>
+
+    <p ng-hide="recentEventsCtrl.events.length">No events found</p>
+  </div>
+</article>

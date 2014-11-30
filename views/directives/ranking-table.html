@@ -1,0 +1,23 @@
+<table class="table table-striped" infinite-scroll="rankingTableCtrl.lanrankingApi.nextRankingPage()" infinite-scroll-distance="0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Country</th>
+      <th>First name</th>
+      <th>Nickname</th>
+      <th>Last name</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="player in rankingTableCtrl.lanrankingApi.players track by $index">
+      <td>{{player.rank}}</td>
+      <td>{{player.countrycode}}</td>
+      <td>{{player.firstname}}</td>
+      <td>{{player.nickname}}</td>
+      <td>{{player.lastname}}</td>
+      <td>{{player.points}}</td>
+    </tr>
+  </tbody>
+</table>
+<div style='clear: both;'></div>
